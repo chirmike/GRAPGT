@@ -11,17 +11,15 @@
 ==========================================================================
 		1.	GRAPGT-AprioriTID.jar	
 		2.	GRAPGT.R
-		3.	sourceCode.R
-		4.	test3.data
+		3.	test3.data
 
 
 ==========================================================================
 			Files description
 ==========================================================================
 		1.	"GRAPGT-AprioriTID.jar" : modified java library of the AprioriTID algorithm for generating extensions;	
-		2.	"GRAPGT.R" : modified approach of the ConsGradual algorithm taking into account the gradual threshold;
-		3.	"ConsGradual.R" : source code of the initial approach without gradual threshold;
-		4.	"test3.data" : dataset; 
+		2.	"GRAPGT.R" : modified approach of the T-GPatterns algorithm taking into account the gradual threshold;
+		3.	"test3.data" : dataset; 
 
 ==========================================================================
 		Run (WINDOWS)
@@ -32,7 +30,7 @@
 			-	install.packages("rJava")
 			-	if the Java JDK is not installed :
 				*	download and install  jdk (latest version) : https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_Howto.html
-				*	create environment variable AVA_HOME and put path until SDK (ex: JAVA_HOME ="C:\Program Files\Java\jdk1.8.0_171")
+				*	create environment variable JAVA_HOME and put path until JDK (ex: JAVA_HOME ="C:\Program Files\Java\jdk1.8.0_171")
 		4.	Go to the command prompt and go to the directory containing the source code then type :
 			- "PATH\Rscript" <<File_R>> <<minSupp>> <<minimum_size_of_gradual_pattern>> <<dataset>> <<output_file>> <<K1>> <<K2>> <<column_separator_in_the_dataset>>
 			- where K1 and K2 are constants
@@ -47,7 +45,7 @@
 			-	install.packages("rJava")
 			-	if the Java JDK is not installed :
 				*	download and install  jdk (latest version) : https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_Howto.html
-				*	create environment variable AVA_HOME and put path until SDK (ex: JAVA_HOME ="C:\Program Files\Java\jdk1.8.0_171")
+				*	create environment variable AVA_HOME and put path until SDK
 		3.	Go to the command prompt and go to the directory containing the source code then type :
 			- "PATH\Rscript" <<File_R>> <<minSupp>> <<minimum_size_of_gradual_pattern>> <<dataset>> <<output_file>> <<K1>> <<K2>> <<column_separator_in_the_dataset>>
 			- where K1 and K2 are constants
